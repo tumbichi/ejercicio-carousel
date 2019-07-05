@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+
+
+
+    <ImageView
+        android:id="@+id/thumb_image_view"
+        android:layout_width="164dp"
+        android:layout_height="244dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/thumb_text_view_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/thumb_image_view"
+        android:layout_marginTop="-32dp"
+        android:text="Titulo de la pelicula"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="#fff"/>
+
+</RelativeLayout>
