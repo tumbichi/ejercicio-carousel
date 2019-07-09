@@ -20,6 +20,7 @@ public class VideoPlayerView extends AppCompatActivity {
 
     private VideoView videoView;
     private ProgressBar progressBar;
+    private Uri urlVideo;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -34,9 +35,11 @@ public class VideoPlayerView extends AppCompatActivity {
         progressBar = findViewById(R.id.progress_bar);
         videoView = findViewById(R.id.video_view);
 
+        urlVideo = getIntent().getData();
+
 
         MediaController controller = new MediaController(this);
-        videoView.setVideoURI( Uri.parse("http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4") );
+        videoView.setVideoURI(urlVideo);
         videoView.setMediaController(controller);
         controller.setAnchorView(videoView);
 
